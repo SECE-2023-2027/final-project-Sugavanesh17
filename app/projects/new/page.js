@@ -91,7 +91,7 @@ export default function NewProjectPage() {
         <div className={styles.headerRight}>
           <div className={styles.userInfo}>
             <span className={styles.userIcon}>👤</span>
-            <span className={styles.username}>{user.email.split('@')[0]}</span>
+            <span className={styles.username}>{user.email ? user.email.split('@')[0] : 'User'}</span>
           </div>
           <button onClick={handleLogout} className={styles.logoutBtn}>
             <span className={styles.logoutIcon}>↪</span>
